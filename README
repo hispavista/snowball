@@ -1,5 +1,18 @@
 This contains the source code for the snowball compiler and the stemming
 algorithms on the website.
 
+Generate headers/sources files
+-----------
+go to folder /libstemmer and run
+
+./mkmodules.pl modules.h src_c modules.txt ../mkinc.mak
+./mkmodules.pl modules_utf8.h src_c  modules_utf8.txt ../mkinc_utf8.mak
+
+go to root folder of the projectand run make 
+
+If there were no errors during execution you should have src_c folder with the different stemmers created
+
+If you want to add more languages, you have to create a folder inside "algorithms" folder with the language name, and put the sbl file (stem_ISO_8859_1.sbl). Then edit the modules*.txt files in libstemmer folder to add your language to the configuration (language UTF_8 langiso)
+
 See http://snowball.tartarus.org/ for more details.
 
