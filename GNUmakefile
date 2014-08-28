@@ -7,12 +7,12 @@ java_src_dir = $(java_src_main_dir)/ext
 libstemmer_algorithms = danish dutch english finnish french german hungarian \
 			italian \
 			norwegian porter portuguese romanian \
-			russian spanish swedish turkish
+			russian spanish swedish turkish basque catalan
 
 KOI8_R_algorithms = russian
 ISO_8859_1_algorithms = danish dutch english finnish french german hungarian \
 			italian \
-			norwegian porter portuguese spanish swedish
+			norwegian porter portuguese spanish swedish basque catalan
 ISO_8859_2_algorithms = romanian
 
 other_algorithms = german2 kraaij_pohlmann lovins
